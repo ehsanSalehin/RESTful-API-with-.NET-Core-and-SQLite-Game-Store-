@@ -1,0 +1,26 @@
+GET http://localhost:5166/games
+###
+GET http://localhost:5166/games/3
+###
+POST http://localhost:5166/games
+Content-Type: application/json
+
+{
+    "name": "Harry Potter 3",
+    "genre": "Adventure",
+    "price": 19.99,
+    "releaseDate": "1999-11-11"
+}
+###
+PUT http://localhost:5166/games/4
+Content-Type: application/json
+
+{
+    "name": "Harry Potter 3",
+    "genre": "Figthing",
+    "price": 59.99,
+    "releaseDate": "2004-11-11"
+}
+
+###
+Delete http://localhost:5166/games/3
